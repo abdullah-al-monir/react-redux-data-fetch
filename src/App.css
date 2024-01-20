@@ -1,0 +1,32 @@
+section {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+}
+article {
+  background-color: darkslategray;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: inset;
+  transition: transform 0.3s;
+}
+article:hover {
+  transform: scale(1.05);
+  background-color: rgb(132, 245, 245);
+  color: black;
+}
+@media (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
